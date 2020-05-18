@@ -29,8 +29,8 @@ services:
     restart: unless-stopped
     ports:
       - 8443:443
-      - 8444:2345
-      - 8445:8765
+      - 2345:2345
+      - 8765:8765
     labels:
       org.label-schema.group: "meething"
 
