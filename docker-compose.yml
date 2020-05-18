@@ -1,0 +1,18 @@
+version: '2.1'
+
+services:
+  meething:
+    image: meething/meething:latest
+    container_name: meething
+    volumes:
+      - ./meething-all.config.js:/meething-all.config.js
+    environment:
+      - SSLCERT=/certs/fullchain.pem
+      - SSLKEY=/certs/privkey.pem
+    restart: unless-stopped
+    ports:
+      - 8443:443
+      - 8444:2345
+      - 8445:8765
+    labels:
+      org.label-schema.group: "meething"
