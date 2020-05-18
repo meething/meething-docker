@@ -10,7 +10,7 @@ This docker container runs the full meething stack for fun and testing.
 
 #### Build
 ```
-docker build -t meething/meething .
+docker build --no-cache -t meething/meething .
 ```
 
 #### Usage
