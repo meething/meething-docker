@@ -4,9 +4,9 @@
 
 This docker container runs the full meething stack for fun and testing.
 
-* Meething UI on port 443
-* Meething SFU on port 2345
-* Meething GUN on port 8765
+* [Meething UI](https://github.com/meething/meething) on port 443
+* [Meething SFU](https://github.com/meething/meething-mediasoup) on port 2345
+* [Meething GUN](https://github.com/meething/gundb-multisocket) on port 8765
 
 #### Build
 ```
